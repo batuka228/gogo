@@ -188,4 +188,51 @@ nav{
     font-size: 14px!important;
     line-height: 22px!important;
 }
+.background-blue{
+    background-color: #00b0f4;
+    color: white;
+    width: 67px;
+    min-height: 25.5;
+    font-size: 18px;
+    padding:2px 3px;
+    border-radius: 3px;
+
+}
+.story-top{
+    flex-direction: row;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+.story-img{
+    width: 188px;
+    height: 287px;
+    
+
+}
+.story1{
+    position: relative;
+    width: 188px;
+    height: 287px;
+    
+}
+.stoey-logo{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.story-title{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    font-size: 13px;
+    color: white;
+    max-height: 37px;
+    
+}
 
