@@ -13,6 +13,16 @@ body {
   flex-direction: column;
   background: linear-gradient(180deg, #fff, #f7f7f7);
 }
+.page2 {
+  width: 1200px;
+  flex-direction: column;
+}
+.border-radius10px{
+  border-radius: 10px;
+}
+.margin-0{
+  margin: 0;
+}
 nav {
   width: 100%;
   min-height: 88px;
@@ -222,11 +232,88 @@ nav {
   font-size: 13px;
   color: white;
 }
-.story-icon{
-    color: white;
+.story-icon {
+  color: white;
 }
-.story{
-    flex-direction: row;
-    gap: 0px 20px;
-    margin-left: 10px;
+.story {
+  flex-direction: row;
+  gap: 0px 20px;
+  margin-left: 10px;
 }
+.calendar-list {
+  flex-direction: row;
+  margin-top: 20px;
+  gap: 0px 15px;
+}
+.calendar-list-item:hover .calendar-line {
+  background-color: #00b0f4;
+}
+.calendar-list-item:hover .onoodor {
+  color: #00b0f4;
+}
+.calendar-list-item:hover {
+  color: #00b0f4;
+}
+.margin-top {
+  margin-top: 59.9px;
+}
+
+.onoodor {
+  color: #b7b6b6;
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.calendar-line {
+  background-color: #efefef;
+  height: 7px;
+  border-radius: 20px;
+}
+.calnedar-day {
+  color: #b7b6b6;
+  font-size: 13px;
+  text-align: center;
+}
+.width {
+  width: 103px;
+}
+.medee {
+  flex-direction: row;
+}
+.medee-in {
+  flex-direction: row;
+  height: 171px;
+}
+.medee-right {
+  width: 400px;
+  margin-top: 100px;
+}
+.margin-right100{
+  margin-right: 150px;
+}
+.medee-undersec{
+  flex-direction: row;
+
+}
+.medee-img{
+  height: 150px;
+  width: 210px;
+
+}
+.list-text{
+  font-size:20px;
+}
+.medee-list{
+  gap:50px 0px;
+  flex-direction: column;
+}
+.ontsloh-img{
+  height: 170px;
+  width: 290px;
+}
+.ontsloh-medee{
+  height: 30px;
+  font-size: 20px;
+  
+}
+
