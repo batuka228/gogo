@@ -287,12 +287,15 @@ nav {
 .medee-right {
   width: 400px;
   margin-top: 100px;
+  border-left: 1px dotted #b7b6b6;
 }
 .margin-right100{
   margin-right: 150px;
 }
 .medee-undersec{
   flex-direction: row;
+  width: 290px;
+  height: 20px;
 
 }
 .medee-img{
@@ -304,7 +307,7 @@ nav {
   font-size:20px;
 }
 .medee-list{
-  gap:50px 0px;
+  gap:10px 0px;
   flex-direction: column;
 }
 .ontsloh-img{
@@ -314,6 +317,15 @@ nav {
 .ontsloh-medee{
   height: 30px;
   font-size: 20px;
-  
+
 }
+.ontsloh-top{
+  flex-direction: row;
+  align-items: center;
+}
+.medee-left{
+  gap: 40px 0px;
+  flex-direction: column;
+}
+
 
