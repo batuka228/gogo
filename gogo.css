@@ -4,7 +4,6 @@ body {
 
 .body-a {
   background-color: #f0efef;
-
 }
 .flex {
   display: flex;
@@ -42,8 +41,6 @@ nav {
   min-height: 88px;
   gap: 0px 10px;
 }
-.navbar-left {
-}
 .dollar {
   color: #a2db00;
   font-size: 18px;
@@ -74,8 +71,6 @@ nav {
   min-height: 36px;
   gap: 0px 10px;
 }
-.mini-texts {
-}
 .mini-card-down {
   flex-direction: row;
   justify-content: center;
@@ -93,6 +88,16 @@ nav {
 .main-img {
   width: 100%;
   border-radius: 5px;
+  position: relative;
+}
+.main-img:hover +.main-img-hover{
+  background-image:url(https://mgl.gogo.mn/newsn/thumbnail/1000/np/2023/09/29/5203274/16-105113-883522705.jpeg);
+}
+.main-img-hover{
+  position: absolute;
+  top: 88px;
+  width: 1200px;
+  height: 486px;
 }
 .main-text {
   flex-direction: column;
@@ -139,6 +144,7 @@ nav {
   flex-direction: row;
   gap: 0px 30px;
   margin-top: 30px;
+  margin-left: 30px;
 }
 .card-img {
   max-width: 263px;
@@ -243,6 +249,7 @@ nav {
   gap: 0px 20px;
   margin-left: 10px;
 }
+
 .calendar-list {
   flex-direction: row;
   margin-top: 20px;
@@ -254,7 +261,13 @@ nav {
 .calendar-list-item:hover .onoodor {
   color: #00b0f4;
 }
-.calendar-list-item:hover {
+.story-in:hover .story-img{
+  scale: 1.1;
+}
+.story-in:hover .story-title{
+  scale: 1.1;
+}
+.calendar-list-item:hover .calendar-day {
   color: #00b0f4;
 }
 .margin-top {
@@ -272,7 +285,7 @@ nav {
   height: 7px;
   border-radius: 20px;
 }
-.calnedar-day {
+.calendar-day{
   color: #b7b6b6;
   font-size: 13px;
   text-align: center;
@@ -303,6 +316,7 @@ nav {
 .hevmayg-cards {
   flex-direction: row;
   gap: 0px 25px;
+  overflow-x: scroll;
 }
 .hevmayg {
   flex-direction: column;
@@ -476,25 +490,25 @@ nav {
   padding: 2px 3px;
   border-radius: 3px;
 }
-.tec-card{
+.tec-card {
   width: 263px;
   height: 300px;
   border: 1px dotted gray;
 }
-.comic-card{
+.comic-card {
   width: 542px;
   height: 330px;
   flex-direction: row;
-  gap: 0px 40px ;
+  gap: 0px 40px;
 }
-button{
+button {
   width: 759px;
   font-size: 18px;
   align-items: center;
   justify-content: center;
   gap: 0px 10px;
 }
-button img{
+button img {
   width: 40px;
   height: 40px;
 }
@@ -506,107 +520,106 @@ button img{
   font-size: 26px;
   align-items: center;
 }
-.tec-card-under{
+.tec-card-under {
   flex-direction: row;
   height: 20px;
   width: 200px;
   gap: 5px 5px;
-
 }
-.comic-card-under{
+.comic-card-under {
   flex-direction: row;
   height: 20px;
   width: 200px;
-  gap: 5px 5px;}
-.tec-card-top{
+  gap: 5px 5px;
+}
+.tec-card-top {
   width: 263px;
   height: 150px;
   border-radius: 10px;
 }
-.comic-card-top{
+.comic-card-top {
   width: 263px;
   height: 150px;
   border-radius: 10px;
 }
-.comic-card{
+.comic-card {
   border: 1px solid gray;
 }
-.tec{
+.tec {
+  margin-top: 50px;
+  overflow-x: scroll;
+}
+.comic {
   margin-top: 50px;
 }
-.comic{
-  margin-top: 50px;
-}
-.tec-cards{
+.tec-cards {
   flex-direction: row;
   gap: 0px 30px;
 }
-.comic-cards{
+.comic-cards {
   flex-direction: row;
   gap: 0px 30px;
 }
-.page3{
+.page3 {
   margin-top: 150px;
   background-color: #1a1a1a;
   display: block;
   width: 100vw;
   justify-content: center;
 }
-  .page3-in{
-    justify-content: center;
-  }
-.video{
+.page3-in {
+  justify-content: center;
+}
+.video {
   gap: 40px 0px;
   flex-direction: column;
   justify-content: center;
 }
-.video-bottom{
-   flex-direction: row;
-   gap: 0px 40px;
-}
-.video-midle{
+.video-bottom {
   flex-direction: row;
   gap: 0px 40px;
 }
-.video-card h3{
+.video-midle {
+  flex-direction: row;
+  gap: 0px 40px;
+}
+.video-card h3 {
   color: white;
 }
-.video-top{
+.video-top {
   align-items: center;
   font-size: 20px;
 }
-.video-card{
-  width: 263px;
-
-}
-.video-card img{
+.video-card {
   width: 263px;
 }
-.video-card-under{
+.video-card img {
+  width: 263px;
+}
+.video-card-under {
   width: 200px;
   height: 20px;
-
 }
-.video-card-under img{
+.video-card-under img {
   width: 30px;
 }
-footer{
+footer {
   width: 100vw;
   justify-content: center;
   align-items: center;
 }
-.footer-in{
+.footer-in {
   max-width: 1100px;
   justify-content: space-between;
 }
-.footer-text{
+.footer-text {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.footer-texts{
- font-size: 16px;
+.footer-texts {
+  font-size: 16px;
 }
-.footer-icon{
+.footer-icon {
   width: 40px;
-  height: 40px  ;
+  height: 40px;
 }
