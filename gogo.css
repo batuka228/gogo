@@ -1,6 +1,37 @@
 body {
   margin: 0px;
 }
+.delgerengui {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 263px;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 0;
+  
+}
+.zurag-out:hover > .delgerengui{
+  opacity: 1;
+}
+.zurag-out:hover > .card-img{
+  scale: 1.1;
+}
+.card-img {
+  width: 263px;
+  height: 175px;
+  overflow: hidden;
+}
+.zurag-out {
+  position: relative;
+  overflow: hidden;
+}
 
 .body-a {
   background-color: #f0efef;
@@ -90,16 +121,16 @@ nav {
   border-radius: 5px;
   position: relative;
 }
-.main-img:hover .main-img-hover{
-   background-color: black;
-  }
-  .yariltslaga1:hover{
-    scale: 1.04;
-  }
-  .grid-img:hover{
-    scale: 1.1;
-  }
-.main-img-hover{
+.main-img:hover .main-img-hover {
+  background-color: black;
+}
+.yariltslaga1:hover {
+  scale: 1.04;
+}
+.grid-img:hover {
+  scale: 1.1;
+}
+.main-img-hover {
   position: absolute;
   top: 88px;
   width: 1200px;
@@ -146,6 +177,9 @@ nav {
   gap: 0px 20px;
   width: 60px;
 }
+.zurag-out {
+  position: relative;
+}
 .main-cards {
   flex-direction: row;
   gap: 0px 30px;
@@ -156,6 +190,7 @@ nav {
   max-width: 263px;
   height: 175px;
   border-radius: 5px;
+  position: relative;
 }
 .card-right-img {
   width: 263px;
@@ -267,10 +302,10 @@ nav {
 .calendar-list-item:hover .onoodor {
   color: #00b0f4;
 }
-.story-in:hover .story-img{
+.story-in:hover .story-img {
   scale: 1.1;
 }
-.story-in:hover .story-title{
+.story-in:hover .story-title {
   scale: 1.1;
 }
 .calendar-list-item:hover .calendar-day {
@@ -291,7 +326,7 @@ nav {
   height: 7px;
   border-radius: 20px;
 }
-.calendar-day{
+.calendar-day {
   color: #b7b6b6;
   font-size: 13px;
   text-align: center;
@@ -321,7 +356,7 @@ nav {
 }
 .hevmayg-cards {
   flex-direction: row;
-  gap: 0px 25px;
+  gap: 0px 30px;
   overflow-x: scroll;
 }
 .hevmayg {
@@ -557,8 +592,7 @@ button img {
 }
 .comic {
   margin-top: 50px;
-  margin-lef:20px;
-  
+  margin-lef: 20px;
 }
 .tec-cards {
   flex-direction: row;
@@ -620,9 +654,8 @@ footer {
   align-items: center;
 }
 .footer-in {
-width: 1200px;  
-justify-content: space-between;
-
+  width: 1200px;
+  justify-content: space-between;
 }
 .footer-text {
   flex-direction: row;
