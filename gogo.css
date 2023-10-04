@@ -15,12 +15,150 @@ body {
   align-items: center;
   border-radius: 5px;
   z-index: 0;
-  
 }
-.zurag-out:hover > .delgerengui{
+.delgerengui-hev{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 264px;
+  height: 230px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 0;}
+
+.delgerengui-ontsloh {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 290px;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 0;
+}
+.delgerengui-tec{
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 263px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 0;}
+.delgerengui-medee {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 210px;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: -1;
+}
+.delgerengui-comic {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 542px;
+  height: 330px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: -1;
+}
+.delgerengui-video {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 263px;
+  height: 175px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: -1;
+}
+.video-hover{
+  position: relative;
+  overflow: hidden;
+
+}
+.video-hover:hover .delgerengui-video{
+  opacity: 1;
+  z-index: 1;
+}
+.video-hover:hover .hover-zurag{
+  transform: scale(1.1);
+}
+
+.tec-hover{
+  position: relative;
+  overflow: hidden;
+}
+.tec-hover:hover .tec-card-top{
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+.tec-hover:hover .delgerengui-tec{
+  opacity: 1;
+  z-index: 1;
+}
+.comic-hover:hover .delgerengui-comic{
+  opacity: 1;
+  z-index: 1;
+}
+.comic-hover:hover .comic-card-img{
+  transform: scale(1.2);
+
+}
+.comic-hover{
+  position: relative;
+  overflow: hidden;
+}
+.ontsloh-hover {
+  position: relative;
+}
+.hevmayg-hover:hover .hevmayg-card-img{
+   transform: scale(1.1);
+}
+.hevmayg-hover:hover .delgerengui-hev{
+  opacity: 1;
+  z-index: 1;
+}
+/* .medee-hover:hover > .medee-img {
+  scale: 1.1;
+} */
+.zurag-out:hover > .delgerengui {
   opacity: 1;
 }
-.zurag-out:hover > .card-img{
+.zurag-out:hover > .card-img {
   scale: 1.1;
 }
 .card-img {
@@ -56,6 +194,7 @@ body {
 .margin-0 {
   margin: 0;
 }
+
 nav {
   width: 100%;
   min-height: 88px;
@@ -368,9 +507,40 @@ nav {
   height: 20px;
   width: 200px;
 }
-.medee-img {
+
+/* .medee-card:hover {
+  overflow: hidden;
+} */
+
+.medee-card:hover .medee-img {
+  transform: scale(1.1);
+}
+.medee-card:hover .delgerengui-medee {
+  opacity: 1;
+  z-index: 20;
+}
+
+.medee-hover {
   height: 150px;
-  width: 210px;
+  width: 210px !important;
+  position: relative;
+  overflow: hidden;
+}
+.ontsloh-hover{
+  position: relative;
+  overflow: hidden;
+
+}
+.medee-img {
+  height: 100%;
+  width: 100%;
+}
+.ontsloh-hover:hover .delgerengui-ontsloh{
+  opacity: 1;
+  z-index: 1;
+}
+.ontsloh-hover:hover .ontsloh-img{
+  transform: scale(1.1);
 }
 .list-text {
   font-size: 20px;
@@ -407,18 +577,23 @@ nav {
 .yariltslaga1 {
   grid-area: big;
   height: 503px;
+  overflow: hidden;
 }
-.yriltslaga2 {
+.yariltslaga2 {
   grid-area: top-left;
+  overflow: hidden;
 }
-.yriltslaga3 {
+.yariltslaga3 {
   grid-area: top-right;
+  overflow: hidden;
 }
-.yriltslaga4 {
+.yariltslaga4 {
   grid-area: bottom-left;
+  overflow: hidden;
 }
-.yriltslaga5 {
+.yariltslaga5 {
   grid-area: bottom-right;
+  overflow: hidden;
 }
 .grid-img1 {
   width: 580px;
@@ -572,6 +747,15 @@ button img {
   height: 20px;
   width: 200px;
   gap: 5px 5px;
+}
+.comic-card-text{
+  border: 1px solid gray;
+  border-radius: 5px;
+
+}
+.hevmayg-hover{
+  position: relative;
+  overflow: hidden;
 }
 .tec-card-top {
   width: 263px;
