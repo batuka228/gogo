@@ -91,7 +91,7 @@ body {
   z-index: -1;
 }
 .delgerengui-video {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 263px;
   height: 175px;
   position: absolute;
@@ -116,6 +116,10 @@ body {
 }
 .video-hover:hover .hover-zurag{
   transform: scale(1.1);
+}
+.delgerengui-video img {
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .tec-hover{
