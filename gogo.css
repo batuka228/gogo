@@ -105,12 +105,9 @@ body {
   border-radius: 5px;
   z-index: -1;
 }
-.undag-hover{
+.delgerengui-video img{
   
-
 }
-  
-
 .video-hover{
   position: relative;
   overflow: hidden;
@@ -280,10 +277,12 @@ nav {
 }
 .yariltslaga1:hover  .grid-img1{
   scale: 1.1;
+  transition: 500ms;
 
 }
 .grid-img:hover {
   scale: 1.1;
+  transition: 500ms;
 }
 .main-img-hover{
   position: absolute;
@@ -772,6 +771,8 @@ button img {
 .comic-card-text{
   border: 1px solid gray;
   border-radius: 5px;
+  flex-direction: column;
+  padding: 10px;
 
 }
 .hevmayg-hover{
