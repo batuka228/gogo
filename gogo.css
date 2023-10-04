@@ -105,6 +105,12 @@ body {
   border-radius: 5px;
   z-index: -1;
 }
+.undag-hover{
+  
+
+}
+  
+
 .video-hover{
   position: relative;
   overflow: hidden;
@@ -258,26 +264,37 @@ nav {
   gap: 40px 0px;
   flex-direction: column;
   border-radius: 30px;
+  position: relative;
 }
 .main-img {
   width: 100%;
   border-radius: 5px;
   position: relative;
 }
-.main-img:hover .main-img-hover {
-  background-color: black;
+.undag-hover:hover ~ .main-img-hover{
+  background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/ck/2023/10/03/8-140559-186930180720231003140603.jpeg);
+  opacity: 1;
+  z-index: 3;
+  transition: 500ms;
+  animation-timing-function: cubic-bezier(100ms 300ms 400ms 500ms);
 }
-.yariltslaga1:hover {
-  scale: 1.04;
+.yariltslaga1:hover  .grid-img1{
+  scale: 1.1;
+
 }
 .grid-img:hover {
   scale: 1.1;
 }
-.main-img-hover {
+.main-img-hover{
   position: absolute;
-  top: 88px;
+  top:0px;
+  left: 0px;
+  opacity: 0;
+  z-index: -1;
   width: 1200px;
-  height: 486px;
+  height: 502px;
+
+
 }
 .main-text {
   flex-direction: column;
@@ -580,8 +597,8 @@ nav {
 }
 .yariltslaga1 {
   grid-area: big;
-  height: 503px;
   overflow: hidden;
+
 }
 .yariltslaga2 {
   grid-area: top-left;
