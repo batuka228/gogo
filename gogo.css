@@ -420,6 +420,7 @@ nav {
   position: relative;
   width: 188px;
   height: 287px;
+  overflow: hidden;
 }
 
 .story-logo,
@@ -874,4 +875,123 @@ footer {
 .footer-icon {
   width: 40px;
   height: 40px;
+}
+@media screen and (max-width:960px ) {
+  .navbar-menu{
+    display: none;
+  }
+  nav{
+    justify-content: start;
+  }
+  .navbar-right .nav-mini-card{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+  }
+  .navbar-left ul{
+    display: none;
+  }
+  .navbar-logo img{
+    width: 90px;
+    height: 43px;
+  }
+  .main-img{
+    display: none;
+  }
+  .main-cards{
+    display: none;
+  }
+  .gogo-story{
+   margin-left: 50px;
+  }
+  .calendar-list{
+    display: none ;
+  }
+  .grid-text{
+    display: none;
+  }
+  .hevmayg{
+    display: none;
+  }
+  .tec{
+    display:none
+  }
+  .comic{
+    display: none;
+  }
+  .video{
+    display: none;
+  }
+  .page3{
+    display: none;
+  }
+  .medee-right{
+    display: none;
+  }
+  .medee-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    gap: 0px 150px;
+  }
+  .medee-in{
+    margin: 0;
+    width: 442px;
+    height: 260px;
+  }
+  .body-a{
+    height: 513px;
+  }
+  .medee{
+    
+  }
+  .grid-container {
+    display: none;
+  }
+  .none{
+    display: block;
+  }
+  .grid-img{
+    min-width: 505px;
+    min-height: 337px;
+  }
+  .yriltslaga-in{
+    width: 100vw;
+  }
+  .yriltslaga-in h3{
+    width: 100vw;
+  }
+  
+}
+@media screen and (max-width: 400px) { 
+  .medee-list{
+    flex-direction: column;
+  }
+  .story{
+    overflow: scroll;
+  }
+  .main-under-img{
+    display: none;
+  }
+  .medee-in{
+    width: 100vw;
+  }
+  .main-texts{
+    flex-direction: column;
+    height: 100vh;
+  }
+  .gogo-story{
+    margin-top: 100px;
+  }
+  .body-a{
+    height: 100vh;
+  }
+  
+}
+.none{
+  flex-direction: row;
+  justify-content: space-between;
+  display: none;
+}
+.medee-text{
+  cursor: pointer;
 }
