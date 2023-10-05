@@ -969,6 +969,10 @@ footer {
   .story{
     overflow: scroll;
   }
+  nav{
+    padding-left: 50px;
+    margin-top: 50px;
+  }
   .main-under-img{
     display: none;
   }
@@ -978,9 +982,6 @@ footer {
   .main-texts{
     flex-direction: column;
     height: 100vh;
-  }
-  .gogo-story{
-    margin-top: 100px;
   }
   .body-a{
     height: 100vh;
