@@ -449,6 +449,8 @@ nav {
   flex-direction: row;
   gap: 0px 20px;
   margin-left: 10px;
+  overflow-x: scroll;
+  width: 1200px;
 }
 
 .calendar-list {
@@ -763,6 +765,7 @@ button img {
   width: 200px;
   gap: 5px 5px;
 }
+
 .comic-card-under {
   flex-direction: row;
   height: 20px;
@@ -868,9 +871,13 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
   width: 600px;
+  justify-content: flex-end;
 }
 .footer-texts {
   font-size: 16px;
+}
+.main-under{
+  overflow: hidden;
 }
 .footer-icon {
   width: 40px;
@@ -930,8 +937,11 @@ footer {
   .medee-list{
     flex-direction: row;
     flex-wrap: wrap;
-    margin-left: 50px;
-    gap: 0px 150px;
+    gap: 0px 30px;
+
+  }
+  .story-in{
+    width: 200px;
   }
   .medee-in{
     margin: 0;
@@ -943,6 +953,15 @@ footer {
   }
   .medee{
     
+  }
+  .page1{
+    width: 100vw;
+  }
+  .main-underimg{
+   display: none;
+  }
+  .page2{
+    width: 100vw;
   }
   .grid-container {
     display: none;
@@ -960,11 +979,44 @@ footer {
   .yriltslaga-in h3{
     width: 100vw;
   }
+  .footer-in{
+    width: 100vw;
+    margin-left:50px;
+  }
+  button{
+    width: 100vw;
+  }
+  .main-img-hover{
+    display: none;
+  }
+  .medee-list{
+    margin-left: 50px;
+  
+  }
+  nav{
+    margin-left: 50px;
+  }
+  
   
 }
 @media screen and (max-width: 400px) { 
   .medee-list{
     flex-direction: column;
+  }
+  .medee-list{
+    margin-left: 30px;
+  }
+  nav{
+    margin-left: 50px;
+  }
+  .main-img-hover{
+    display: none;
+  }
+  button{
+    width: 100vw;
+  }
+  .main-underimg{
+   display: none;
   }
   .story{
     overflow: scroll;
@@ -972,6 +1024,10 @@ footer {
   nav{
     padding-left: 50px;
     margin-top: 50px;
+  }
+  .footer-in{
+    width: 100vw;
+    margin-left: 50px;
   }
   .main-under-img{
     display: none;
@@ -994,5 +1050,5 @@ footer {
   display: none;
 }
 .medee-text{
-  cursor: pointer;
+
 }
